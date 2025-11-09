@@ -1,8 +1,7 @@
 import Hero3D from './components/Hero3D';
 import FeaturesGrid from './components/FeaturesGrid';
-import ShowcaseConsole from './components/ShowcaseConsole';
-import AgenticIDEHero from './components/AgenticIDEHero';
 import CodeSplitShowcase from './components/CodeSplitShowcase';
+import ShowcaseConsole from './components/ShowcaseConsole';
 
 function App() {
   return (
@@ -15,8 +14,8 @@ function App() {
           </a>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-white/80">
             <a href="#features" className="hover:text-white">Features</a>
-            <a href="#showcase" className="hover:text-white">Console</a>
-            <a href="#ide" className="hover:text-white">Agentic IDE</a>
+            <a href="#showcase" className="hover:text-white">Showcase</a>
+            <a href="#enterprise" className="hover:text-white">Enterprise</a>
           </nav>
           <div className="flex items-center gap-3">
             <a href="#" className="hidden sm:inline-flex rounded-lg border border-white/20 bg-black/50 px-3 py-1.5 text-white/80 hover:bg-black/70">Sign in</a>
@@ -33,10 +32,9 @@ function App() {
         <section id="showcase">
           <CodeSplitShowcase />
         </section>
-        <section id="ide" className="bg-black">
-          <AgenticIDEHero />
+        <section id="enterprise" className="bg-black">
+          <ShowcaseConsole />
         </section>
-        <ShowcaseConsole />
       </main>
 
       <footer className="bg-black border-t border-white/10">

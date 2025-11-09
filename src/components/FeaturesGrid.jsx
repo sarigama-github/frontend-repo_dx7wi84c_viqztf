@@ -1,14 +1,14 @@
-import { Shield, Activity, FileSearch, ServerCog, Layers, Lock, Cpu, FileStack } from 'lucide-react';
+import { Plug, Coins, Layers, FileText, Lock, Shield, User, Wrench } from 'lucide-react';
 
 const features = [
-  { icon: Layers, title: 'Indexed Codebase Integrations', desc: 'Connect private repos for context-aware engineering with semantic search and embeddings.' },
-  { icon: FileStack, title: 'Custom File Management', desc: 'Onboard documents and architecture files per project to accelerate ramp-up.' },
-  { icon: Lock, title: 'Enterprise SSO (SAML)', desc: 'Integrate with identity providers to enforce role-based access controls.' },
-  { icon: Shield, title: 'Zero Data Retention', desc: 'Session data remains ephemeral for maximum privacy and compliance.' },
-  { icon: Activity, title: 'Real-Time Incident Response', desc: 'Detect, communicate, and resolve incidents with integrated runbooks.' },
-  { icon: Cpu, title: 'Developer Productivity Tools', desc: 'Team onboarding, incident management, cost tracking, and automation.' },
-  { icon: FileSearch, title: 'Audit & Evidence', desc: 'Generate audit-ready evidence from logs, inventories, and tickets.' },
-  { icon: ServerCog, title: 'Custom AI Credits', desc: 'Monthly credits with transparent pay-as-you-go overage options.' },
+  { icon: Plug, title: 'Bring Your Own LLM/API', desc: 'Integrate your preferred AI models or third‑party APIs for maximum flexibility and compliance.' },
+  { icon: Coins, title: 'Custom AI Credits', desc: 'Monthly credits tailored to your usage scale with transparent pay‑as‑you‑go overage options.' },
+  { icon: Layers, title: 'Indexed Codebase Integrations', desc: 'Connect company repos for context‑aware engineering with embeddings and semantic search.' },
+  { icon: FileText, title: 'Custom File Management', desc: 'Onboard documents and architecture files per project to accelerate developer ramp‑up.' },
+  { icon: Lock, title: 'Enterprise SSO (SAML)', desc: 'Integrate with corporate identity providers to enforce secure, role‑based access control.' },
+  { icon: Shield, title: 'Zero Data Retention', desc: 'All session data is ephemeral and never stored for top‑tier privacy guarantees.' },
+  { icon: User, title: 'Dedicated Account Manager', desc: 'Personalized enterprise support and rapid issue resolution with a single point of contact.' },
+  { icon: Wrench, title: 'Developer Productivity Tools', desc: 'Onboarding, incident workflows, cost tracking, and standardized automation out of the box.' },
 ];
 
 export default function FeaturesGrid() {
@@ -19,7 +19,7 @@ export default function FeaturesGrid() {
           Enterprise capabilities, built-in
         </h2>
         <p className="mt-3 text-white/80 max-w-2xl">
-          A cohesive purple/blue palette, consistent across every section. Performance-first animations and thoughtful depth cues reinforce the 3D vibe.
+          A cohesive purple/blue palette with subtle depth glows. Motion is performance‑aware and respectful of reduced‑motion preferences.
         </p>
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

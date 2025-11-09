@@ -1,12 +1,14 @@
 import Spline from '@splinetool/react-spline';
+import { motion, useReducedMotion } from 'framer-motion';
 
 export default function Hero3D() {
+  const prefersReducedMotion = useReducedMotion();
   return (
     <section className="relative w-full min-h-screen bg-black overflow-hidden">
       {/* 3D Cover */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/wwTRdG1D9CkNs368/scene.splinecode"
+          scene="https://prod.spline.design/EF7JOSsHLk16Tlw9/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
@@ -19,19 +21,39 @@ export default function Hero3D() {
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-10 lg:px-12 flex min-h-screen items-center">
         <div className="max-w-3xl text-left">
-          <p className="inline-flex items-center gap-2 rounded-full border border-violet-400/30 bg-violet-500/10 px-3 py-1 text-violet-200 text-xs tracking-wide">
+          <motion.p
+            initial={prefersReducedMotion ? false : { opacity: 0, y: 8 }}
+            animate={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className="inline-flex items-center gap-2 rounded-full border border-violet-400/30 bg-violet-500/10 px-3 py-1 text-violet-200 text-xs tracking-wide"
+          >
             Live • Interactive 3D
-          </p>
-          <h1 className="mt-4 text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight">
+          </motion.p>
+          <motion.h1
+            initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
+            animate={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.05 }}
+            className="mt-4 text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight"
+          >
             <span className="bg-gradient-to-r from-violet-300 via-sky-300 to-white bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(99,102,241,0.35)]">CogniCode</span>
             <span className="block text-white/90">Futuristic IDE for agentic engineering</span>
-          </h1>
+          </motion.h1>
 
-          <p className="mt-6 text-lg sm:text-xl text-white/80 max-w-2xl">
+          <motion.p
+            initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
+            animate={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="mt-6 text-lg sm:text-xl text-white/80 max-w-2xl"
+          >
             A bold purple/blue workspace for model ops, safety, and developer flow. Move the scene with your mouse — it reacts in real‑time.
-          </p>
+          </motion.p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
+          <motion.div
+            initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
+            animate={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            className="mt-8 flex flex-wrap gap-4"
+          >
             <a
               href="#features"
               className="inline-flex items-center justify-center rounded-lg bg-violet-400 text-black px-5 py-3 font-semibold shadow-[0_0_30px_rgba(139,92,246,0.35)] hover:bg-violet-300 transition-colors"
@@ -42,27 +64,9 @@ export default function Hero3D() {
               href="#showcase"
               className="inline-flex items-center justify-center rounded-lg border border-violet-400/40 bg-black/50 px-5 py-3 font-semibold text-violet-200 hover:bg-black/70 backdrop-blur-md"
             >
-              See Developer Workflows
+              See Enterprise Options
             </a>
-          </div>
-        </div>
-
-        {/* Subtle 3D-ish floating chips for depth */}
-        <div className="hidden lg:block relative ml-auto">
-          <div className="pointer-events-none perspective-[1200px]">
-            <div className="absolute right-8 top-20 rotate-6 [transform:rotateX(12deg)_rotateY(-18deg)] select-none">
-              <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-sky-500/10 to-violet-600/10 px-5 py-4 shadow-[0_20px_60px_-20px_rgba(59,130,246,0.35)] backdrop-blur-md">
-                <div className="text-xs text-sky-200/90">Latency (p95)</div>
-                <div className="text-3xl font-bold text-white mt-1">142ms</div>
-              </div>
-            </div>
-            <div className="absolute right-0 bottom-20 -rotate-3 [transform:rotateX(10deg)_rotateY(14deg)] select-none">
-              <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-violet-600/10 to-sky-500/10 px-5 py-4 shadow-[0_20px_60px_-20px_rgba(139,92,246,0.35)] backdrop-blur-md">
-                <div className="text-xs text-violet-200/90">Token usage</div>
-                <div className="text-3xl font-bold text-white mt-1">-23%</div>
-              </div>
-            </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
