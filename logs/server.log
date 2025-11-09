@@ -3,9 +3,7 @@
 > vite
 
 
-  VITE v5.4.20  ready in 343 ms
+  VITE v5.4.20  ready in 237 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.42.228:3000/
-8:06:04 AM [vite] Pre-transform error: Transform failed with 1 error:
-/home/workspace/src/App.jsx:1:42: ERROR: Syntax error "n"

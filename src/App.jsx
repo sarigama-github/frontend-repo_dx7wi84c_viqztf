@@ -1,4 +1,5 @@
-import Hero3D from './components/Hero3D';\nimport FeaturesGrid from './components/FeaturesGrid';
+import Hero3D from './components/Hero3D';
+import FeaturesGrid from './components/FeaturesGrid';
 import ShowcaseConsole from './components/ShowcaseConsole';
 import AgenticIDEHero from './components/AgenticIDEHero';
 import CodeSplitShowcase from './components/CodeSplitShowcase';
@@ -26,8 +27,12 @@ function App() {
 
       <main>
         <Hero3D />
-        <FeaturesGrid />
-        <CodeSplitShowcase />
+        <section id="features">
+          <FeaturesGrid />
+        </section>
+        <section id="showcase">
+          <CodeSplitShowcase />
+        </section>
         <section id="ide" className="bg-black">
           <AgenticIDEHero />
         </section>
