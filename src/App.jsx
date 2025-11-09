@@ -19,7 +19,7 @@ function App() {
           </nav>
           <div className="flex items-center gap-3">
             <a href="#" className="hidden sm:inline-flex rounded-lg border border-white/20 bg-black/50 px-3 py-1.5 text-white/80 hover:bg-black/70">Sign in</a>
-            <a href="#" className="inline-flex rounded-lg bg-white px-3 py-1.5 font-semibold text-black shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:bg-neutral-100">Get a demo</a>
+            <a href="#features" className="inline-flex rounded-lg bg-white px-3 py-1.5 font-semibold text-black shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:bg-neutral-100">Get started</a>
           </div>
         </div>
       </header>

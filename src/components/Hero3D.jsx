@@ -8,7 +8,7 @@ export default function Hero3D() {
       {/* 3D Cover */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/EF7JOSsHLk16Tlw9/scene.splinecode"
+          scene="https://prod.spline.design/N8g2VNcx8Rycz93J/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
@@ -21,19 +21,12 @@ export default function Hero3D() {
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-7xl px-6 sm:px-10 lg:px-12 flex min-h-screen items-center">
         <div className="max-w-3xl text-left">
-          <motion.p
-            initial={prefersReducedMotion ? false : { opacity: 0, y: 8 }}
-            animate={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className="inline-flex items-center gap-2 rounded-full border border-violet-400/30 bg-violet-500/10 px-3 py-1 text-violet-200 text-xs tracking-wide"
-          >
-            Live • Interactive 3D
-          </motion.p>
+          {/* Removed caption pill per request */}
           <motion.h1
             initial={prefersReducedMotion ? false : { opacity: 0, y: 12 }}
             animate={prefersReducedMotion ? {} : { opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.05 }}
-            className="mt-4 text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight"
+            className="mt-2 text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight"
           >
             <span className="bg-gradient-to-r from-violet-300 via-sky-300 to-white bg-clip-text text-transparent drop-shadow-[0_0_25px_rgba(99,102,241,0.35)]">CogniCode</span>
             <span className="block text-white/90">Futuristic IDE for agentic engineering</span>
@@ -58,13 +51,13 @@ export default function Hero3D() {
               href="#features"
               className="inline-flex items-center justify-center rounded-lg bg-violet-400 text-black px-5 py-3 font-semibold shadow-[0_0_30px_rgba(139,92,246,0.35)] hover:bg-violet-300 transition-colors"
             >
-              Explore Features
+              Get started
             </a>
             <a
-              href="#showcase"
+              href="#enterprise"
               className="inline-flex items-center justify-center rounded-lg border border-violet-400/40 bg-black/50 px-5 py-3 font-semibold text-violet-200 hover:bg-black/70 backdrop-blur-md"
             >
-              See Enterprise Options
+              Enterprise options
             </a>
           </motion.div>
         </div>
