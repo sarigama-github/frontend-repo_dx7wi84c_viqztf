@@ -9,12 +9,12 @@ function App() {
       <header className="fixed top-0 inset-x-0 z-40 backdrop-blur-md bg-black/40 border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-12 h-16 flex items-center justify-between">
           <a href="#" className="text-xl font-extrabold tracking-tight">
-            <span className="text-white">Cogni</span>
-            <span className="text-white/80">Code</span>
+            <span className="text-white">Neon</span>
+            <span className="text-white/80">Systems</span>
           </a>
           <nav className="hidden sm:flex items-center gap-6 text-sm text-white/80">
             <a href="#features" className="hover:text-white">Features</a>
-            <a href="#showcase" className="hover:text-white">Showcase</a>
+            <a href="#showcase" className="hover:text-white">Explore</a>
             <a href="#enterprise" className="hover:text-white">Enterprise</a>
           </nav>
           <div className="flex items-center gap-3">
@@ -39,7 +39,7 @@ function App() {
 
       <footer className="bg-black border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-12 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-white/70 text-sm">© {new Date().getFullYear()} CogniCode. All rights reserved.</p>
+          <p className="text-white/70 text-sm">© {new Date().getFullYear()} Neon Systems. All rights reserved.</p>
           <div className="flex items-center gap-6 text-sm text-white/70">
             <a href="#" className="hover:text-white">Privacy</a>
             <a href="#" className="hover:text-white">Security</a>
